@@ -82,7 +82,7 @@ body {
     font-family: Eurostile;
     background-image: url("Media/Images/BgGrid.png");
     background-repeat: repeat;
-    background-color: #1a232c;
+    background-color: #041318;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -198,7 +198,7 @@ div.logo {
 }
 .box {
   --b: 0px;   /* thickness of the border */
-  --c: white;   /* color of the border */
+  --c: #96e2ee;   /* color of the border */
   --w: 0px;  /* width of border */
   
 
@@ -234,13 +234,13 @@ div.logo {
 .blank {
     height: 1000px;
 }
-.footerImg {
+.newsletterImg {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-.footerBottom {
+.newsletterBottom {
     height: 300px;
     background-color: #1a232c;
 }
