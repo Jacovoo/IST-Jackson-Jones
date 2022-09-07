@@ -234,6 +234,11 @@ div.logo {
 .blank {
     height: 1000px;
 }
+.newsletterText {
+    font-size: 100px;
+    color: #96e2ee;
+    margin: 0;
+}
 .newsletterImg {
     display: block;
     width: 100%;
@@ -243,4 +248,5 @@ div.logo {
 .newsletterBottom {
     height: 300px;
     background-color: #1a232c;
+    border-bottom: #96e2ee solid 1px;
 }
