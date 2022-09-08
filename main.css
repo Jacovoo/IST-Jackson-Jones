@@ -234,13 +234,7 @@ div.logo {
 .blank {
     height: 1000px;
 }
-.newsletterText {
-    font-size: 40px;
-    color: #96e2ee;
-    margin: 0;
-    padding-top: 40px;
-    margin-left: auto;
-}
+
 .newsletterImg {
     display: block;
     width: 100%;
@@ -248,18 +242,28 @@ div.logo {
     object-fit: contain;
 }
 .newsletterBottom {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 190px;
+    height: 150px;
     background-color: #1a232c;
     border-bottom: #96e2ee solid 1px;
 }
 form {
-    padding-left: 30px;
-    margin-right: auto;
+    padding-top: 10px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.newsletterText {
+    text-align: center;
+    font-size: 40px;
+    color: #96e2ee;
+    margin: 0;
+    margin-left: -150px;
+    margin-right: 100px;
+}
+.newsletterFormContainer {
+    display: flex;
+    width:min-content
 }
 .newsletterLabel {
     color: #96e2ee;
@@ -267,9 +271,7 @@ form {
 }
 input[type=text] {
     width: 500px;
-    padding: 12px 20px;
-    padding-top: 0px;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
     margin: 8px 0;
     box-sizing: border-box;
     border: 0;
@@ -281,21 +283,22 @@ input[type=text] {
     color: #96e2ee;
     display: inline;
   }
-  
   input[type=text]:focus {
     color: #96e2ee;
     border-bottom: 3px solid #5c9199;
     background-color: transparent;
-  }
-  .newsletterFormContainer {
-  }
-  .newsletterCheckmark {
-  }
-  .newsletterSubmit {
+}
+label.checkmark {
+    overflow: wrap;
+}
+.newsletterCheckbox {
+    color: #96e2ee;
+}
+.newsletterSubmit {
     display: flex;
     flex-direction: row;
-  }
-  input[type=submit] {  
+}
+input[type=submit] {  
     border: #96e2ee solid 1px;
     color: #96e2ee;
     background-color: transparent;
@@ -303,6 +306,33 @@ input[type=text] {
     text-decoration: none;
     margin: 4px 2px;
     margin-left: 40px;
+    height: fit-content;
     cursor: pointer;
-  }
-  
+    font-size: 20px;
+}
+.footer {
+    color: #96e2ee;
+    font-family: Eurostile;
+    height: auto;
+}
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    background-color: #1a232c;
+}
+.follow {
+    font-size: 30px;
+    text-align: left;
+    margin: 0;
+    padding-top: 50px;;
+    padding-left: 100px;
+    margin-right: auto;
+}
+.followLogos {
+    font-size: 30px;
+    text-align: right;
+    margin: 0;
+    padding-top: 50px;
+    padding-right: 100px;
+}
