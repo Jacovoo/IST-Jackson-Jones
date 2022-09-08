@@ -129,6 +129,10 @@ div.logo {
     margin-right: auto;
     z-index: 2;
 }
+.gallery {
+    height: 1000px;
+    color: #96e2ee;
+}
 .newsHeadingContainer {
     margin: 0 auto;
     max-width: 1376px;
@@ -230,11 +234,10 @@ div.logo {
     75%{--w: 15px; --b: 2px}
     100%{--w: 20px; --b: 2px;}
 }
-
-.blank {
-    height: 1000px;
+.products {
+    height: 500px;
+    color: #96e2ee;
 }
-
 .newsletterImg {
     display: block;
     width: 100%;
@@ -283,7 +286,7 @@ input[type=text] {
     color: #96e2ee;
     display: inline;
   }
-  input[type=text]:focus {
+input[type=text]:focus {
     color: #96e2ee;
     border-bottom: 3px solid #5c9199;
     background-color: transparent;
