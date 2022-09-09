@@ -10,6 +10,9 @@
     font-style: normal;
 }
 @import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+.blank {
+    height: 1000px;
+}
 
 nav.navbar {
     background-color: #131a21;
@@ -130,8 +133,52 @@ div.logo {
     z-index: 2;
 }
 .gallery {
+    list-style: none;
     height: 1000px;
     color: #96e2ee;
+    margin-top: 100px;
+    padding-right: 40px;
+}
+.gallery1 {
+    list-style: none;
+}
+.gallery1Container {
+    font-family: 'Jura', sans-serif;
+    background-color: #1a232c !important;
+    height: 350px;
+    width: 500px;
+    margin: -50px 10px;
+    border: 1px solid #96e2ee2f !important;
+}
+.galleryHeading {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    padding: 0;
+}
+.gallery2 {
+    list-style: none;
+}
+.gallery2Container {
+    font-family: 'Jura', sans-serif;
+    background-color: #1a232c !important;
+    height: 350px;
+    width: 500px;
+    margin: -50px 10px;
+    margin-left: auto;
+    border: 1px solid #96e2ee2f !important;
+}
+.gallery3 {
+    list-style: none;
+}
+.gallery3Container {
+    font-family: 'Jura', sans-serif;
+    background-color: #1a232c !important;
+    height: 350px;
+    width: 500px;
+    margin: -50px 10px;
+    border: 1px solid #96e2ee2f !important;
 }
 .newsHeadingContainer {
     margin: 0 auto;
