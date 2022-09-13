@@ -130,6 +130,15 @@ div.logo {
     margin-right: auto;
     z-index: 2;
 }
+.logoImage {
+    position: sticky;
+    top: 0;
+    width: 30%;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 3;
+}
 .gallery {
     list-style: none;
     height: 1000px;
