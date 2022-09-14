@@ -109,12 +109,23 @@ h1 {
     animation-name: welcome;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
+    font-size: 50px;
     top: 20px;
     z-index: 2;
 }
+.fa-chevrons-right {
+    width: 10px;
+    height: 10px;
+    color: #96e2ee;
+}
+.welcomeMore {
+    text-decoration: none;
+    font-size: 20px;
+    color: #96e2ee;
+}
 @keyframes welcome {
-  from {left:15%; opacity: 0;}
-  to {left:30%; opacity: 1;}
+  from {left:10%; opacity: 0;}
+  to {left:20%; opacity: 1;}
 }
 div.logoBanner {
     position: sticky;
@@ -151,8 +162,8 @@ div.logo {
 .gallery1Container {
     font-family: 'Jura', sans-serif;
     background-color: #1a232c !important;
-    height: 350px;
-    width: 500px;
+    height: 400px;
+    width: 600px;
     margin: -50px 10px;
     border: 1px solid #96e2ee2f !important;
 }
@@ -169,8 +180,8 @@ div.logo {
 .gallery2Container {
     font-family: 'Jura', sans-serif;
     background-color: #1a232c !important;
-    height: 350px;
-    width: 500px;
+    height: 400px;
+    width: 600px;
     margin: -50px 10px;
     margin-left: auto;
     border: 1px solid #96e2ee2f !important;
@@ -181,10 +192,13 @@ div.logo {
 .gallery3Container {
     font-family: 'Jura', sans-serif;
     background-color: #1a232c !important;
-    height: 350px;
-    width: 500px;
+    height: 400px;
+    width: 600px;
     margin: -50px 10px;
     border: 1px solid #96e2ee2f !important;
+}
+section {
+    margin-top: 200px;
 }
 .newsHeadingContainer {
     margin: 0 auto;
