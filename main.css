@@ -72,7 +72,6 @@ li.navLink a::before {
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
-
 html,body
 {
     width: 100%;
@@ -80,7 +79,6 @@ html,body
     margin: 0px;
     padding: 0px;
 }
-
 body {
     font-family: Eurostile;
     background-image: url("Media/Images/BgGrid.png");
@@ -98,6 +96,7 @@ body {
     height: 100%;
     opacity: 10%;
     z-index: 1;
+    float: right;
 }
 h1 {
     font-family: Blender Pro;
@@ -142,6 +141,9 @@ div.logo {
     color: #96e2ee;
     margin-top: 100px;
     padding-right: 40px;
+}
+.storeLink {
+    text-decoration: none;
 }
 .gallery1 {
     list-style: none;
@@ -444,4 +446,9 @@ input[type=submit] {
     margin-top: -15px;
     margin-bottom: 10px;
     text-align: center;
+}
+.construction {
+    margin: 20%;
+    text-align: center;
+    font-size: 100px;
 }
