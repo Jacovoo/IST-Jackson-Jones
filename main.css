@@ -363,10 +363,10 @@ input[type=submit] {
     font-family: Eurostile;
     height: auto;
 }
-.footerContainer {
+.followContainer {
     display: flex;
     flex-direction: row;
-    height: 500px;
+    height: 150px;
     background-color: #1a232c;
 }
 .follow {
@@ -378,9 +378,30 @@ input[type=submit] {
     margin-right: auto;
 }
 .followLogos {
+    margin-right: 50px;
     font-size: 30px;
     text-align: right;
     margin: 0;
     padding-top: 50px;
     padding-right: 100px;
+}
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    background-color: #1a232c;
+
+}
+.contact {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.contactTitle {
+    margin:0;
+}
+.followContainer {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    background-color: #1a232c;
 }
