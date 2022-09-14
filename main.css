@@ -113,9 +113,8 @@ h1 {
     top: 20px;
     z-index: 2;
 }
-.fa-chevrons-right {
-    width: 10px;
-    height: 10px;
+.fa-angles-right {
+    font-size: 20px;
     color: #96e2ee;
 }
 .welcomeMore {
