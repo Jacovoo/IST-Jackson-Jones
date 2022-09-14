@@ -94,18 +94,24 @@ body {
     height: 500px;
     background-color: #0b0f13;
 }
+.bannerImage { 
+    height: 100%;
+    opacity: 10%;
+    z-index: 1;
+}
 h1 {
     font-family: Blender Pro;
     color: #96e2ee;
     padding-top: 100px;
     padding-bottom: 250px;
     position: absolute;
-
 }
 .welcome {
     animation-name: welcome;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
+    top: 20px;
+    z-index: 2;
 }
 @keyframes welcome {
   from {left:15%; opacity: 0;}
