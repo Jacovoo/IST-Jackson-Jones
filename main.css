@@ -304,6 +304,10 @@ section {
     height: 500px;
     color: #96e2ee;
 }
+.about {
+    height: 500px;
+    color: #96e2ee;
+}
 .newsletterImg {
     display: block;
     width: 100%;
@@ -465,3 +469,41 @@ input[type=submit] {
     text-align: center;
     font-size: 100px;
 }
+  
+.filterDiv {
+    float: left;
+    background-color: #96e2ee;
+    color: #ffffff;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 2px;
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .storeContainer {
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  
+  /* Style the buttons */
+  .button {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color:#96e2ee;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #96e2ee;
+  }
+  
+  .button.active {
+    background-color: #5c9199;
+    color: white;
+  }

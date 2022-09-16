@@ -6,9 +6,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <script src="https://kit.fontawesome.com/ee22a74abd.js" crossorigin="anonymous"></script>
    <title>Solar Aerospace | Ship manufacturer</title>
+   <link rel="icon" type="image/x-icon" href="Media/Images/solar.png">
    <link rel="stylesheet" href="main.css">
+   <script src="index.js"></script>
 </head>
-
 <body>
    <header>
       <nav class="navbar">
@@ -16,15 +17,27 @@
             <ul class="navList">
                <li class="navLink"><a href="index.html">Home</a></li>
                <li class="navLink"><a href="store.html">Store</a></li>
-               <li class="navLink"><a href="#about">About</a></li>
+               <li class="navLink"><a href="about.html">About</a></li>
                <li class="navLink" style="float:right;"><a href="signin.html">Sign In</a></li>
             </ul>
          </div>
       </nav>
    </header>
    <main>
-      <div class="products">
-         <p class="construction">UNDER CONSTRUCTION</p>
+      <div class="store">
+         <div id="storeButtonContainer">
+            <button class="button active" onclick="filterSelection('all')"> Show all ships</button>
+            <button class="button" onclick="filterSelection('civilian')"> Civilian</button>
+            <button class="button" onclick="filterSelection('racing')"> Racing</button>
+            <button class="button" onclick="filterSelection('military')"> Military</button>
+            <button class="button" onclick="filterSelection('mega')"> Megaships</button>
+          </div>
+          <div class="storeContainer">
+            <div class="filterDiv civilian">Eagle</div>
+            <div class="filterDiv racing">Hummingbird</div>
+            <div class="filterDiv military">Viper</div>
+            <div class="filterDiv mega">Leviathan</div>
+          </div>
       </div>
    </main>
       </div>
