@@ -24,8 +24,8 @@
       </nav>
    </header>
    <main>
-      <!-- <div class="store">
-         <div id="storeButtonContainer">
+      <div class="store">
+         <!-- <div id="storeButtonContainer">
             <button class="button active" onclick="filterSelection('all')"> Show all ships</button>
             <button class="button" onclick="filterSelection('civilian')"> Civilian</button>
             <button class="button" onclick="filterSelection('racing')"> Racing</button>
@@ -37,8 +37,67 @@
             <div class="filterDiv racing">Hummingbird</div>
             <div class="filterDiv military">Viper</div>
             <div class="filterDiv mega">Leviathan</div>
-          </div>
-      </div> -->
+          </div> -->
+            <div id="storeButtonContainer">
+              <button class="button active" onclick="filterSelection('all')"> Show all</button>
+              <button class="button" onclick="filterSelection('civilian')"> Cars</button>
+              <button class="button" onclick="filterSelection('racing')"> Animals</button>
+              <button class="button" onclick="filterSelection('military')"> Fruits</button>
+              <button class="button" onclick="filterSelection('mega')"> Colors</button>
+            </div>
+            
+            <div class="storeContainer">
+               <div class="filterDiv civilian">Eagle</div>
+               <div class="filterDiv racing">Hummingbird</div>
+               <div class="filterDiv military">Viper</div>
+               <div class="filterDiv mega">Leviathan</div>
+            </div>
+
+            <script>
+            filterSelection("all")
+            function filterSelection(c) {
+              var x, i;
+              x = document.getElementsByClassName("filterDiv");
+              if (c == "all") c = "";
+              for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+              }
+            }
+            
+            function w3AddClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+              }
+            }
+            
+            function w3RemoveClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+              }
+              element.className = arr1.join(" ");
+            }
+            
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("storeButtonContainer");
+            var btns = btnContainer.getElementsByClassName("button");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
+            }
+            </script>
+      </div>
    </main>
       </div>
       <div class="newsletter">

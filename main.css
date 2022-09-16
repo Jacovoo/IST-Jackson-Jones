@@ -469,41 +469,39 @@ input[type=submit] {
     text-align: center;
     font-size: 100px;
 }
-  
 .filterDiv {
     float: left;
-    background-color: #96e2ee;
+    background-color: #2196F3;
     color: #ffffff;
     width: 100px;
     line-height: 100px;
     text-align: center;
     margin: 2px;
     display: none;
-  }
+}
   
-  .show {
+.show {
     display: block;
-  }
+}
   
-  .storeContainer {
+.storeContainer {
     margin-top: 20px;
     overflow: hidden;
-  }
-  
-  /* Style the buttons */
-  .button {
+}
+
+.button {
     border: none;
     outline: none;
     padding: 12px 16px;
-    background-color:#96e2ee;
-    cursor: pointer;
-  }
-  
-  .button:hover {
     background-color: #96e2ee;
-  }
+    cursor: pointer;
+}
   
-  .button.active {
-    background-color: #5c9199;
+.button:hover {
+    background-color: #96e2ee;
+}
+  
+.button.active {
+    background-color: #666;
     color: white;
-  }
+}
