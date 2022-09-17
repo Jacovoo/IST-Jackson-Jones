@@ -129,8 +129,8 @@ h1 {
 div.logoBanner {
     position: sticky;
     top: 0;
-    width: 50vw;
     height: 30px;
+    width: 775px;
     margin-left: auto;
     margin-right: auto;
     opacity: 80%;
@@ -470,14 +470,16 @@ input[type=submit] {
     font-size: 100px;
 }
 .filterDiv {
-    float: left;
-    background-color: #2196F3;
+    margin-left: auto;
+    margin-right: auto;
+    border:#96e2ee 1px solid;
     color: #ffffff;
-    width: 100px;
-    line-height: 100px;
+    width: 1000px;
+    line-height: 500px;
     text-align: center;
-    margin: 2px;
+    margin-bottom: 20px;
     display: none;
+    font-size: 40px;
 }
   
 .show {
@@ -504,4 +506,24 @@ input[type=submit] {
 .button.active {
     background-color: #666;
     color: white;
+}
+.store {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+}
+.storeHeader {
+    padding-bottom: 20px;
+    padding-left: 300px;
+    padding-right: 300px;
+    background-color: #1a232c;
+    border: #96e2ee solid 1px;
+}
+.storeHeading {
+    margin: 50px 0;
+    text-align: center;
+    color: #96e2ee;
+    font-size: 50px;
+    border-bottom: #96e2ee 1px solid;
 }
