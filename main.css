@@ -145,6 +145,34 @@ div.logo {
     margin-right: auto;
     z-index: 2;
 }
+.productHeadingContainer {
+    margin: 0 auto;
+    max-width: 1376px;
+    padding: 0 15px 6px;
+    position: relative;
+    margin-top: 100px;
+}
+.productHeading {
+    border-bottom: #96e2ee 1px solid;
+    width: 700px;
+    font-size: 35px;
+    font-family: Blender Pro;
+    color: #96e2ee;
+    margin: 0 0 0px;
+    padding-bottom: 10px;
+    z-index: 1;
+    text-align: left;
+}
+.productHeading::after {
+    background-image: url(Media/Images/underline.png);
+    bottom: 0;
+    content: "";
+    height: 7px;
+    left: 0;
+    position: absolute;
+    width: 116px;
+    z-index: 2;
+}
 .gallery {
     list-style: none;
     height: 1000px;
@@ -159,12 +187,25 @@ div.logo {
     list-style: none;
 }
 .gallery1Container {
+    position: relative;
     font-family: 'Jura', sans-serif;
+    background-image: url(Media/Images/ship\ preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #1a232c !important;
     height: 400px;
     width: 600px;
     margin: -50px 10px;
     border: 1px solid #96e2ee2f !important;
+}
+.gallery1Container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1a232cda;
 }
 .galleryHeading {
     position: relative;
@@ -177,7 +218,11 @@ div.logo {
     list-style: none;
 }
 .gallery2Container {
+    position: relative;
     font-family: 'Jura', sans-serif;
+    background-image: url(Media/Images/software\ preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #1a232c !important;
     height: 400px;
     width: 600px;
@@ -185,16 +230,38 @@ div.logo {
     margin-left: auto;
     border: 1px solid #96e2ee2f !important;
 }
+.gallery2Container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1a232cda;
+}
 .gallery3 {
     list-style: none;
 }
 .gallery3Container {
+    position: relative;
     font-family: 'Jura', sans-serif;
+    background-image: url(Media/Images/tech\ preveiw.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #1a232c !important;
     height: 400px;
     width: 600px;
     margin: -50px 10px;
     border: 1px solid #96e2ee2f !important;
+}
+.gallery3Container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1a232cda;
 }
 section {
     margin-top: 200px;
@@ -212,7 +279,6 @@ section {
     font-family: Blender Pro;
     color: #96e2ee;
     margin: 0 0 0px;
-    margin-top: 77px;
     padding-bottom: 10px;
     z-index: 1;
 }
