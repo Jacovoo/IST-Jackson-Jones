@@ -17,7 +17,12 @@ ul.navList {
     padding: 0;
     overflow: hidden;
 }
-
+.navLogo {
+  margin-left: 20px;
+  float: left;
+  width: 25px;
+  height: 25px;
+}
 li.navLink {
     float: left;
     font-size: 20px;
