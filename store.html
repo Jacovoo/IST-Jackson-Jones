@@ -31,139 +31,154 @@
             <h2 class="storeHeading">STORE</h2>
             <div class="storeHeadingUnderline"></div>
             <div id="storeButtonContainer">
-              <button class="button active" onclick="filterSelection('all')"> Show all</button>
-              <button class="button" onclick="filterSelection('civilian')"> Civilian</button>
-              <button class="button" onclick="filterSelection('mega')"> Mega</button>
-              <button class="button" onclick="filterSelection('military')"> Military</button>                     
-              <button class="button" onclick="filterSelection('racing')"> Racing</button>
+               <button class="button active" onclick="filterSelection('all')"> Show all</button>
+               <button class="button" onclick="filterSelection('civilian')"> Civilian</button>
+               <button class="button" onclick="filterSelection('mega')"> Mega</button>
+               <button class="button" onclick="filterSelection('military')"> Military</button>
+               <button class="button" onclick="filterSelection('racing')"> Racing</button>
             </div>
          </div>
-            <div class="storeContainer">
-               <div class="storeBox">
-                  <div class="filterDiv civilian"></div>
-                  <div class="filterDiv civilian descriptionContainer boxCut"><h2 class="description">|<em> EAGLE</em> <br>A light civilian transport and delivery vehicle.<br>$500 000</h2></div>
-               </div>
-               <div class="storeBox">
-                  <div class="filterDiv racing"></div>
-                  <div class="filterDiv racing descriptionContainer boxCut"><h2 class="description">|<em> HUMMINGBIRD</em> <br>The fastest vehicle currently on market.<br>$3 000 000</h2></div>
-               </div>
-               <div class="storeBox">
-                  <div class="filterDiv mega"></div>
-                  <div class="filterDiv mega descriptionContainer boxCut"><h2 class="description">|<em> LEVIATHAN</em> <br>A large habitation vehicle the size of a small city.<br>$100 000 000 000 000</h2></div>
-               </div>
-               <div class="storeBox">
-                  <div class="filterDiv military"></div>
-                  <div class="filterDiv military descriptionContainer boxCut"><h2 class="description">|<em> VIPER</em> <br>Advanced fighter  with destructive capabilities.<br>$27 000 000</h2></div>
+         <div class="storeContainer">
+            <div class="storeBox">
+               <div class="filterDiv civilian"></div>
+               <div class="filterDiv civilian descriptionContainer boxCut">
+                  <h2 class="description">|<em> EAGLE</em> <br>A light civilian transport and delivery vehicle.<br>$500
+                     000</h2>
                </div>
             </div>
+            <div class="storeBox">
+               <div class="filterDiv racing"></div>
+               <div class="filterDiv racing descriptionContainer boxCut">
+                  <h2 class="description">|<em> HUMMINGBIRD</em> <br>The fastest vehicle currently on market.<br>$3 000
+                     000</h2>
+               </div>
+            </div>
+            <div class="storeBox">
+               <div class="filterDiv mega"></div>
+               <div class="filterDiv mega descriptionContainer boxCut">
+                  <h2 class="description">|<em> LEVIATHAN</em> <br>A large habitation vehicle the size of a small
+                     city.<br>$100 000 000 000 000</h2>
+               </div>
+            </div>
+            <div class="storeBox">
+               <div class="filterDiv military"></div>
+               <div class="filterDiv military descriptionContainer boxCut">
+                  <h2 class="description">|<em> VIPER</em> <br>Advanced fighter with destructive capabilities.<br>$27
+                     000 000</h2>
+               </div>
+            </div>
+         </div>
 
-            <script>
+         <script>
             filterSelection("all")
             function filterSelection(c) {
-              var x, i;
-              x = document.getElementsByClassName("filterDiv");
-              if (c == "all") c = "";
-              for (i = 0; i < x.length; i++) {
-                w3RemoveClass(x[i], "show");
-                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-              }
+               var x, i;
+               x = document.getElementsByClassName("filterDiv");
+               if (c == "all") c = "";
+               for (i = 0; i < x.length; i++) {
+                  w3RemoveClass(x[i], "show");
+                  if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+               }
             }
-            
+
             function w3AddClass(element, name) {
-              var i, arr1, arr2;
-              arr1 = element.className.split(" ");
-              arr2 = name.split(" ");
-              for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-              }
+               var i, arr1, arr2;
+               arr1 = element.className.split(" ");
+               arr2 = name.split(" ");
+               for (i = 0; i < arr2.length; i++) {
+                  if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+               }
             }
-            
+
             function w3RemoveClass(element, name) {
-              var i, arr1, arr2;
-              arr1 = element.className.split(" ");
-              arr2 = name.split(" ");
-              for (i = 0; i < arr2.length; i++) {
-                while (arr1.indexOf(arr2[i]) > -1) {
-                  arr1.splice(arr1.indexOf(arr2[i]), 1);     
-                }
-              }
-              element.className = arr1.join(" ");
+               var i, arr1, arr2;
+               arr1 = element.className.split(" ");
+               arr2 = name.split(" ");
+               for (i = 0; i < arr2.length; i++) {
+                  while (arr1.indexOf(arr2[i]) > -1) {
+                     arr1.splice(arr1.indexOf(arr2[i]), 1);
+                  }
+               }
+               element.className = arr1.join(" ");
             }
-            
-            // Add active class to the current button (highlight it)
+
             var btnContainer = document.getElementById("storeButtonContainer");
             var btns = btnContainer.getElementsByClassName("button");
             for (var i = 0; i < btns.length; i++) {
-              btns[i].addEventListener("click", function(){
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-              });
+               btns[i].addEventListener("click", function () {
+                  var current = document.getElementsByClassName("active");
+                  current[0].className = current[0].className.replace(" active", "");
+                  this.className += " active";
+               });
             }
-            </script>
+         </script>
       </div>
    </main>
+   </div>
+   <div class="newsletter">
+      <div class="newsletterContainer">
+         <img src="Media/Images/footer.png" alt="newsletterHeader" class="newsletterImg">
       </div>
-      <div class="newsletter">
-         <div class="newsletterContainer">
-            <img src="Media/Images/footer.png" alt="newsletterHeader" class="newsletterImg">
-         </div>
-      </div>
-      <footer>
-         <div class="footer">
-            <div class="followContainer">
-               <div class="follow">
-                  FOLLOW SOLAR AEROSPACE
-                  <div class="follow2electricboogaloo">*before you ask, yes twitter still exists in 2300.
-                  </div>
-               </div>
-               <div class="followLogos">
-                  <i class="fa-brands fa-youtube"></i>
-                  <i class="fa-brands fa-twitch"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-facebook-f"></i>
+   </div>
+   <footer>
+      <div class="footer">
+         <div class="followContainer">
+            <div class="follow">
+               FOLLOW SOLAR AEROSPACE
+               <div class="follow2electricboogaloo">*before you ask, yes twitter still exists in 2300.
                </div>
             </div>
-            <div class="footerContainer">
-               <div class="footerAbout">
-                  <h2 class="footerAboutTitle">ABOUT</h2><br>
-                  <p>Solar Aerospace is an innovative comapny based in New America, bringing the everyday customer access to amazing technologies. By donating to our company, it helps uss bring more to you, the customer. We are the 5th largest company in the world. I can't think of anything else to write here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-               </div>
-               <div class="footerLink">
-                  <h2 class="footerLinkTitle">QUICK LINKS</h2>
-                  <ul class="footerLinkList">
-                     <li>
-                        <a href=""></a>
-                        <p>Terms and conditions</p>
-                     </li>
-                     <li>
-                        <a href=""></a>
-                        <p>Privacy policy</p>
-                     </li>
-                     <li>
-                        <a href=""></a>
-                        <p>Donate</p>
-                     </li>
-                     <li>
-                        <a href=""></a>
-                        <p>About</p>
-                     </li>
-                  </ul>
-               </div>
-               <div class="contact">
-                  <h2 class="contactTitle">CONTACT US</h2><br>
-                  <label for="email" class="contactLabel">Enter Email Here</label><br>
-                  <input type="text" id="email" name="email" class="contactForm"><br>
-                  <label for="message" class="contactMessageLabel">Enter Message Here</label><br>
-                  <input type="text" id="message" name="message" class="contactMessageForm"><br>
-               </div>
-            </div>
-            <div class="copyrightContainer">
-               <p class="copyright">© All rights reserved 2123 - 2307</p><br>
-               <p class="copyrightDesign">Designed by Jackson Jones</p>
+            <div class="followLogos">
+               <i class="fa-brands fa-youtube"></i>
+               <i class="fa-brands fa-twitch"></i>
+               <i class="fa-brands fa-twitter"></i>
+               <i class="fa-brands fa-facebook-f"></i>
             </div>
          </div>
-      </footer>
+         <div class="footerContainer">
+            <div class="footerAbout">
+               <h2 class="footerAboutTitle">ABOUT</h2><br>
+               <p>Solar Aerospace is an innovative comapny based in New America, bringing the everyday customer access
+                  to amazing technologies. By donating to our company, it helps uss bring more to you, the customer. We
+                  are the 5th largest company in the world. I can't think of anything else to write here. Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.</p>
+            </div>
+            <div class="footerLink">
+               <h2 class="footerLinkTitle">QUICK LINKS</h2>
+               <ul class="footerLinkList">
+                  <li>
+                     <a href=""></a>
+                     <p>Terms and conditions</p>
+                  </li>
+                  <li>
+                     <a href=""></a>
+                     <p>Privacy policy</p>
+                  </li>
+                  <li>
+                     <a href=""></a>
+                     <p>Donate</p>
+                  </li>
+                  <li>
+                     <a href=""></a>
+                     <p>About</p>
+                  </li>
+               </ul>
+            </div>
+            <div class="contact">
+               <h2 class="contactTitle">CONTACT US</h2><br>
+               <label for="email" class="contactLabel">Enter Email Here</label><br>
+               <input type="text" id="email" name="email" class="contactForm"><br>
+               <label for="message" class="contactMessageLabel">Enter Message Here</label><br>
+               <input type="text" id="message" name="message" class="contactMessageForm"><br>
+            </div>
+         </div>
+         <div class="copyrightContainer">
+            <p class="copyright">© All rights reserved 2123 - 2307</p><br>
+            <p class="copyrightDesign">Designed by Jackson Jones</p>
+         </div>
+      </div>
+   </footer>
    </div>
 </body>
 
