@@ -789,3 +789,140 @@ input[type=submit] {
     position: relative;
     top: -1px
 }
+
+.aboutLogoContainer {
+    width: 250px;
+    height: 250px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutLogo {
+    width: 250px;
+    height: 250px;
+}
+
+.aboutTop {
+    width: 1000px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutHeading {
+    margin-top: 0;
+    text-align: center;
+    color: #96e2ee;
+    font-size: 80px;
+    padding: 30px 0;
+    border-bottom: #96e2ee 3px solid;
+    border-top: #96e2ee 3px solid;
+}
+
+.slogan {
+    margin-top: 300px;
+    color: #96e2ee;
+    width: 1000px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px
+}
+
+.sloganText {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.sloganAuthor {
+    border-top: #96e2ee 2px solid;
+    color: #96e2ee;
+    width: 200px;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+
+.aboutSolar {
+    display: flex;
+}
+
+.aboutDescriptionTitle {
+    margin-top: 200px;
+    color: #96e2ee;
+    margin-top: 200px;
+    margin-left: 50px;
+    text-align: left;
+    font-size: 40px;
+    border-left: #96e2ee 3px solid;
+    padding-left: 30px;
+}
+
+.aboutDescription {
+    color: #96e2ee;
+    margin-top: 40px;
+    margin-left: 50px;
+    text-align: left;
+    font-size: 25px;
+    padding-left: 30px;
+    width: 700px;
+}
+
+.aboutImage {
+    margin-top: 200px;
+    margin-left: 100px;
+    width: 700px;
+}
+
+.aboutGalleryTitle {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: #96e2ee;
+    text-align: center;
+    font-size: 40px;
+}
+
+.aboutGallery {
+    margin-bottom: 100px;
+    height: 640px;
+    display: flex;
+}
+
+.aboutHome {
+    width: 25vw;
+    background-color: #1a232c;
+    border: 1px solid #96e2ee2f;
+    text-decoration: none;
+}
+
+.aboutStore {
+    width: 25vw;
+    background-color: #1a232c;
+    border: 1px solid #96e2ee2f;
+    text-decoration: none;
+}
+
+.aboutNews {
+    width: 25vw;
+    background-color: #1a232c;
+    border: 1px solid #96e2ee2f;
+    text-decoration: none;
+}
+
+.aboutSignup {
+    width: 25vw;
+    background-color: #1a232c;
+    border: 1px solid #96e2ee2f;
+    text-decoration: none;
+}
+
+.aboutGalleryText {
+    text-decoration: none;
+    color: #96e2ee;
+    font-size: 50px;
+    padding-bottom: 5px;
+    border-bottom: #96e2ee 3px solid;
+}
