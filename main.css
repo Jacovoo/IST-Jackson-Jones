@@ -549,6 +549,27 @@ input[type=submit] {
     margin-bottom: 20px;
     margin-right: 15px;
     display: none;
+    z-index: 1;
+}
+.civilian {
+    background-image: url(media/Images/eagle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.mega {
+    background-image: url(media/Images/leviathan.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.military {
+    background-image: url(media/Images/viper.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.racing {
+    background-image: url(media/Images/hummingbird.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .descriptionContainer {
     border:#1a232c 1px solid;
@@ -557,11 +578,12 @@ input[type=submit] {
     height: 150px;
     top: -80px;
     background-color: #1a232c;
+    background-image: none;
+    z-index: 2;
 }
 .boxCut {
     clip-path: polygon(0 0,100% 0,100% calc(100% - 80.00px),calc(100% - 80.00px) 100%,0 100%);
 }
-
 .description {
     font-size: 20px;
     color: #96e2ee;
@@ -594,8 +616,7 @@ input[type=submit] {
 }
   
 .button:hover {
-    color: rgba(255, 255, 255);
-    ;
+    color: white;
 }
   
 .button.active {
@@ -613,12 +634,24 @@ input[type=submit] {
     margin-bottom: 30px;
     border-bottom: #96e2ee 1px solid;
 }
+.storeBox {
+    height: 420px;
+    margin-bottom: 60px;
+}
 .storeHeading {
     margin: 50px 0;
-    width: 100px;
-    margin-bottom: 80px;
-    text-align: center;
+    width: 300px;
+    margin-bottom: 0;
+    text-align: left;
     color: #96e2ee;
     font-size: 50px;
     border-bottom: #96e2ee 1px solid;
+}
+.storeHeadingUnderline {
+    background-image: url(media/Images/underline.png);
+    width: 116px;
+    height: 7px;
+    margin-bottom: 80px;
+    position: relative;
+    top: -1px
 }
